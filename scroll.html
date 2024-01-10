@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCROLL-GALLERY</title>
+    <link rel="stylesheet" href="scroll.css">
+</head>
+<body>
+    <main>
+        <div class="gall-nav">
+            <img src="images/Red Arrow Left Png PNG Transparent With Clear Background ID 402755 png - Free PNG Images.jpg" id="backButton">
+            <div class="gallery">
+                <div>
+                    <span><img src="images/pexels-avinash-patel-544542.jpg" ></span>
+                    <span><img src="images/pexels-deepak-bhandari-12825990.jpg" ></span>
+                    <span><img src="images/pexels-mike-bird-100653.jpg" ></span>
+                </div>
+                <div>
+                    <span><img src="images/pexels-mike-bird-120049.jpg" ></span>
+                    <span><img src="images/pexels-szymon-shields-6152812.jpg" ></span>
+                    <span><img src="images/pexels-oleksandr-p-1093230.jpg" ></span>
+                </div>
+                <div>
+                    <span><img src="images/pexels-mike-bird-1035108.jpg" ></span>
+                    <span><img src="images/pexels-mike-bird-898336.jpg" ></span>
+                    <span><img src="images/pexels-mike-bird-892522.jpg" ></span>
+                </div>
+            </div>
+            <img src="images/Red Arrow Clipart Hd PNG, Arrows Play Red Arrow, Arrow Png, Red Arrow Png, Curved Arrow Png PNG Image For Free Download (1).jpg" id="nextButton">
+        </div>
+    </main>
+
+    <script>
+        let scrollContainer = document.querySelector(".gallery");
+        let nextbutton = document.getElementById("nextButton");
+        let backbutton = document.getElementById("backButton");
+
+
+        nextbutton.addEventListener("click", ()=>{
+            scrollContainer.scrollLeft += 1800;
+            scrollContainer.style.scrollBehavior = "smooth"
+        });
+
+        backbutton.addEventListener("click", ()=>{
+            scrollContainer.scrollLeft -= 1800;
+            scrollContainer.style.scrollBehavior = "smooth"
+        });
+    </script>
+</body>
+</html>
